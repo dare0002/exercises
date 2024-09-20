@@ -1,0 +1,103 @@
+
+
+html {
+    --primary-font-color: #D175B7;
+    --second-primary-font-color: #1c2c54;
+    --heading-font: "Modak", system-ui;
+    --primary-font: "Roboto", sans-serif;
+    --body-bg: #1c2c54;
+    --button-bg: #D175B7;
+
+    max-width: 120rem;
+}
+
+body {
+    background: var(--body-bg);
+    height: 100vh;
+    margin: 0;
+}
+
+.article {
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-font-color);
+    font-weight: 400;
+    font-size: clamp(2rem, 5cqw, 3.125rem);
+    line-height: 1.3; 
+    text-align: center;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+input {
+    padding: 10px 20px;
+}
+
+
+input [type="number"] {
+    margin: 2rem;
+    padding: 2rem;
+}
+
+#guess {
+    font-family: var(--primary-font);
+    color: var(--second-primary-font-color);
+    font-size: clamp(0.6rem, 5cqw, 1rem);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#result {
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+    font-size: clamp(0.6rem, 5cqw, 1rem);
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#celebration {
+    display: none;
+}
+
+.celebration {
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+    font-size: clamp(1rem, 5cqw, 1rem);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 2rem;
+    animation: celebration 1.5s infinite alternate;
+}
+
+button {
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+    font-size: clamp(0.6rem, 5cqw, 1rem);
+    font-weight: 400;
+    line-height: 1.4;
+    border-radius: 1rem;
+    color: var(--second-primary-font-color);
+    border: none;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 10px 40px;
+    background: var(--button-bg);
+}
+
+@keyframes celebration {
+    0% {
+        transform: scale(1); 
+    }
+    100% {
+        transform: scale(2); 
+    }
+}
