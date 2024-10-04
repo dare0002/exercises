@@ -35,5 +35,9 @@ const name6 = nameO.substring(0,2) + nameO[2].toLowerCase() + nameO.substring(3,
 
 console.log(`${name6}`);
 
+// 1 bogstav altid stort og resterende bogstæver altid små, pga ingen slut- Index. 
 
+const firstLetter = "danielaparisa";
 
+const name7 = firstLetter[0].toUpperCase() + firstLetter.substring(1);
+console.log(`${name7}`);
