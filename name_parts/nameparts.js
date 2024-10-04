@@ -13,8 +13,6 @@ const bogstav = name.indexOf("L");
 // 3. print med console log hvor variablene anvendes 
 
 console.log(`${firstName}`);
-
 console.log(`${middleName}`);
-console.log(bogstav);
-
 console.log(`${lastName}`);
+console.log(bogstav);
