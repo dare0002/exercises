@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<!-- Tilføjer en attribute så den kan ændres dynamiskt -->
+
+<body data-theme="">
+    <header>
+        <h1>Theme Switcher</h1>
+
+        <div class="theme-container">
+            <label for="choose-select">Choose theme:</label>
+
+            <select name="themes" id="select">
+                <option value="">--Please choose an option--</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="hawaii">Hawaii</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <p>Content</p>
+        <!-- Lav en data-attribut på body elementet der indeholder hvilket theme der er aktivt, kunne fx hedde data-theme og sæt den lig med theme’ts navn fx: hawaii -->
+    </main>
+    <footer>Footer</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

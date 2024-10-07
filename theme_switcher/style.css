@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2rem;
+    background: var(--header-bg-color);
+    border-bottom: 2px solid #000000;
+}
+
+h1 {
+    font-family:"Playfair Display", serif;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+label, select {
+    display: flex;
+    align-items: center;
+}
+
+.theme-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family:"Playfair Display", serif;
+    letter-spacing: 0.5px;
+}
+
+#select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+}
+
+/* Slippe for den grimme(?) blå focus på knappen  */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+main {
+    margin: 6rem;
+}
+
+footer {
+    font-family:"Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    letter-spacing: 2px;
+    margin-top: auto;
+    padding: 40px;
+    border-top: 2px solid #000000;
+    background: var(--footer-bg-color);
+    color: var(--footer-color);
+}
+
+/* Attribute */
+
+
+/* Light theme */
+
+body[data-theme="light"] {
+    background-color: #F5F5DC;
+    color: #3D211A;
+    --header-bg-color: #F5F5DC;
+    --footer-bg-color: #F5F5DC;
+    --footer-color: #FAA49A;
+}
+
+body[data-theme="dark"] {
+    background: #051650 ;
+    color: #CAF0F8;
+    --header-bg-color: #123499;
+    --footer-bg-color: #123499;
+}
+
+body[data-theme="hawaii"] {
+    background: #00C3E3;
+    color: #000000;
+    --header-bg-color: #FFDE21;
+    --footer-bg-color: #FF69B4;
+}
+
+
+
