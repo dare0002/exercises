@@ -1,0 +1,30 @@
+body{
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+#inQueueNumber {
+    font-size: 5rem;
+    transition: transform 0.3s ease-out;
+}
+
+.grow {
+    animation: growShrink 0.5s forwards;
+}
+
+@keyframes growShrink {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
