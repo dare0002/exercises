@@ -1,0 +1,10 @@
+body {
+    --lightness: 50%;
+    --saturdation: 50%;
+    background-color:hsl(10, var(--saturation), var(--lightness));
+    transition: background-color 0.2s;
+}
+
+#screen-log {
+    display: none;
+}
