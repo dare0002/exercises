@@ -1,0 +1,63 @@
+/* Farve der fylder knappen fra venstre til højre */
+
+body{
+    background: black;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30rem;
+}
+
+#btn {
+    background-color: gray;
+    color: black;
+    border-radius: 2px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Prepare animation med pseudo element */
+
+#btn::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    transition: width 2.5s ease-in-out;
+}
+
+@keyframes fillFromLeft {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* Animation aktiv */
+
+#btn.active::before{
+    width: 100%;
+}
+
+#btn span{
+    position: relative;
+    z-index: 1;
+}
+
+.hidden {
+    display: none;
+}
